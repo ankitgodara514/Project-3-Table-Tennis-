@@ -1,0 +1,186 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Chela One', cursive;
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4px;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 10px 23px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    padding: 6px 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+.navbar ul li a:hover{
+    color: rgb(228, 187, 253);
+}
+.logo{
+    height: 79px;
+    width: 82px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+.btn{
+    margin-top: 19px;
+    padding: 10px 30px;
+    height: 47px;
+    font-family: 'Chela One', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    background-color: cyan;
+    transition: all 0.4s;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(176 101 244);
+    color: rgb(252 252 252)
+}
+
+.one::before{
+    content: "";
+    background: url('bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 575px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+.one {
+    height: 575px;
+    overflow: hidden;
+}
+.one h1,h2{
+    position: absolute;
+    margin: 0;
+    cursor: pointer;
+}
+.one .name{
+    top: 280px;
+    font-size: 3.5vw;
+    left: 61%;
+    color: yellow;
+}
+.one .tag{
+    top: 380px;
+    font-size: 3vw;
+    left: 61%;
+}
+.one h2{
+    top: 603px;
+    font-size: 2vw;
+    left: 88%
+}
+
+.about{
+    display: flex;
+    height: 300px;
+}
+.about h1{
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 231px;
+    font-size: 3vw;
+    color: orange;
+}
+.about p{
+    margin: 0;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 300px;
+    font-size: 1vw;
+    color: rgb(253, 223, 165);
+}
+
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'meriphoto meriphoto content content'
+    'meriphoto meriphoto content content';
+}
+.box{
+    padding: 34px;
+}
+#meriphoto{
+    grid-area: meriphoto;
+}
+#content{
+    grid-area: content;
+    font-size: 1.6vw;
+    text-align: center;
+    color: #9a6fff;
+    padding: 34px 177px;
+    cursor: pointer;
+}
+#content p{
+    font-size: 1vw;
+    color: #cbb4ff;
+}
+.container .ankitimg{
+    height: 600px;
+    width: 500px;
+    border-radius: 30px;
+}
+.sponsor{
+    height: 450px;
+    width: 100%;
+}
+.sponsor h1{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 3vw;
+}
+.sponsor div{
+    display: flex;
+    width: 600px;
+    margin: auto;
+
+}
+.sponsor .sponimg{
+    padding:  0px 70px;
+}
+.sponsor #racketimg{
+    height: 200px;
+    width: 150px;
+}
+.sponsor::before{
+    content: "";
+    background: url('wttTable.jpg') no-repeat center center/cover;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.8;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
